@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* =========================
+   GOOGLE FONT SUPPORT
+========================= */
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #ffe4e6;
+
+  background: #120000;
+}
+
+/* =========================
+   ROOT
+========================= */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* =========================
+   ROMANTIC BACKGROUND
+========================= */
+
+.romantic-bg {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #5b0000 0%,
+      #2a0000 40%,
+      #120000 100%
+    );
+
+  color: #ffe4e6;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+h1,
+.romantic-title {
+  font-family: "Great Vibes", cursive;
+
+  color: #ffd1dc;
+
+  text-shadow:
+    0 0 10px rgba(255, 120, 120, .5),
+    0 0 25px rgba(255, 80, 80, .3);
+
+  animation: titleGlow 3s infinite;
+}
+
+@keyframes titleGlow {
+
+  0% {
+    text-shadow:
+      0 0 10px rgba(255,120,120,.4);
+  }
+
+  50% {
+    text-shadow:
+      0 0 30px rgba(255,120,120,.9);
+  }
+
+  100% {
+    text-shadow:
+      0 0 10px rgba(255,120,120,.4);
+  }
+
+}
+
+/* =========================
+   PARAGRAPH TEXT
+========================= */
+
+.romantic-text {
+
+  font-family: "Poppins", sans-serif;
+
+  color: #ffe4e6;
+
+  line-height: 1.9;
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass-card {
+
+  background:
+    rgba(255,255,255,.05);
+
+  backdrop-filter:
+    blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,.1);
+
+  border-radius:
+    24px;
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,.35);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.romantic-btn {
+
+  padding: 14px 32px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #dc2626,
+      #ec4899
+    );
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.romantic-btn:hover {
+
+  transform:
+    scale(1.05);
+
+  box-shadow:
+    0 0 20px rgba(255,0,0,.4);
+}
+
+/* =========================
+   GLOW EFFECT
+========================= */
+
+.glow {
+
+  box-shadow:
+    0 0 20px rgba(255,0,0,.5);
+}
+
+.glow-card {
+
+  animation:
+    glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+
+  0% {
+    box-shadow:
+      0 0 10px rgba(255,0,0,.4);
+  }
+
+  50% {
+    box-shadow:
+      0 0 40px rgba(255,0,0,.9);
+  }
+
+  100% {
+    box-shadow:
+      0 0 10px rgba(255,0,0,.4);
+  }
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart {
+
+  position: absolute;
+
+  bottom: -50px;
+
+  font-size: 24px;
+
+  animation:
+    floatHeart 8s linear infinite;
+}
+
+@keyframes floatHeart {
+
+  from {
+
+    transform:
+      translateY(0);
+
+    opacity: 1;
+  }
+
+  to {
+
+    transform:
+      translateY(-120vh);
+
+    opacity: 0;
+  }
+}
+
+/* =========================
+   ROSE PETALS
+========================= */
+
+.petal {
+
+  position: absolute;
+
+  top: -50px;
+
+  font-size: 26px;
+
+  animation:
+    fallPetal 10s linear infinite;
+}
+
+@keyframes fallPetal {
+
+  from {
+
+    transform:
+      translateY(-50px)
+      rotate(0deg);
+  }
+
+  to {
+
+    transform:
+      translateY(120vh)
+      rotate(360deg);
+  }
+}
+
+/* =========================
+   VINYL PLAYER
+========================= */
+
+.vinyl {
+
+  border-radius: 50%;
+
+  animation:
+    spinVinyl 10s linear infinite;
+}
+
+@keyframes spinVinyl {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+.fade-in {
+
+  animation:
+    fadeIn .8s ease;
+}
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(20px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #220000;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background:
+    linear-gradient(
+      #dc2626,
+      #ec4899
+    );
+
+  border-radius: 10px;
+}
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+
+  background:
+    rgba(255,0,0,.4);
+
+  color: white;
+}
