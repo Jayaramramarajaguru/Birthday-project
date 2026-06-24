@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
+import GlassHearts from "../components/GlassHearts"
 
 export default function Login() {
   const [name, setName] = useState("")
@@ -24,7 +25,10 @@ export default function Login() {
   }
 
   return (
+    <>
+       <GlassHearts count={6} />
     <div className="min-h-screen romantic-bg flex items-center justify-center px-6">
+      
 
       <motion.div
         initial={{
@@ -111,6 +115,8 @@ export default function Login() {
       </motion.div>
 
     </div>
+    </>
+
   )
 }
 

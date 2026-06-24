@@ -17,6 +17,7 @@
 // import Gift from "./pages/Gift"
 // import Letter from "./pages/Letters"
 // import FinalSurprise from "./pages/FinalSurprise"
+// import FinalMessage from "./pages/Finalmessage"
 
 // export default function App() {
 //  return (
@@ -35,6 +36,8 @@
     
 //     <Route path="/letter" element={<Letter />} />
 //     <Route path="/final" element={<FinalSurprise />} />
+//     <Route path="/finalmessage" element={<FinalMessage />} />
+
 
 //    </Routes>
 //   </BrowserRouter>
@@ -62,6 +65,7 @@ import Gift from "./pages/Gift"
 import Letter from "./pages/Letters"
 import FinalSurprise from "./pages/FinalSurprise"
 import LockGate from "./components/LockGate"
+import FinalMessage from "./pages/Finalmessage"
 
 export default function App() {
  return (
@@ -81,6 +85,8 @@ export default function App() {
     
     <Route path="/letter" element={<LockGate><Letter /></LockGate>} />
     <Route path="/final" element={<LockGate><FinalSurprise /></LockGate>} />
+    <Route path="/finalmessage" element={<LockGate><FinalMessage /></LockGate>} />
+
 
    </Routes>
   </BrowserRouter>
