@@ -81,7 +81,7 @@ export default function Welcome() {
       <div className="fixed top-0 left-0 right-0 flex items-center justify-between px-6 py-4 z-20">
         <div className="flex items-center gap-2">
           <span className="text-red-400 text-lg">≡</span>
-          <span className="text-white text-sm font-light tracking-widest">For Abahaya Shree</span>
+          <span className="text-white text-sm font-light tracking-widest">For Abhaya Shree</span>
           <span className="text-red-500 text-sm">❤</span>
         </div>
         <span className="text-white text-lg">♪</span>
@@ -112,7 +112,7 @@ export default function Welcome() {
             lineHeight: 1.2
           }}
         >
-          Abahaya Shree
+          Abhaya Shree
         </motion.h1>
 
         <motion.div
